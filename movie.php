@@ -11,6 +11,8 @@ stampate a schermo i valori delle relative proprietà di ogni oggetto (potete cr
     // Classe movie
     class Movie {
 
+        public $cover;
+
         // Titolo
         public $title;
 
@@ -30,8 +32,9 @@ stampate a schermo i valori delle relative proprietà di ogni oggetto (potete cr
         public $data_uscita;
 
         // Funzione constructor
-        public function __construct(string $_title, string $_subtitle, string $_language, int $_vote, string $_description, int $_data_uscita)
+        public function __construct(string $_cover, string $_title, string $_subtitle, string $_language, int $_vote, string $_description, int $_data_uscita)
         {
+            $this->cover = $_cover;
             $this->title = $_title;
             $this->subtitle = $_subtitle;
             $this->language = $_language;
