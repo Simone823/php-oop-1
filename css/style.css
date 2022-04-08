@@ -1,0 +1,35 @@
+.movie {
+    max-width: 400px;
+    /* border: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    animation: color 6s linear infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    25% {
+        background-color: rgba(179, 5, 5, 0.8);
+    }
+
+    50% {
+        background-color: rgba(0, 221, 118, 0.8);
+    }
+
+    75% {
+        background-color: rgba(37, 0, 247, 0.8);
+    }
+
+    100% {
+        background-color: rgba(88, 72, 76, 0.8);
+    }
+}
+
+.movie:first-child {
+    margin-bottom: 30px;
+}
