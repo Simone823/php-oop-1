@@ -1,3 +1,10 @@
+/* Reset img */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
 .movie {
     max-width: 400px;
     /* border: 2px solid red; */
@@ -30,6 +37,6 @@
     }
 }
 
-.movie:first-child {
+.movie:not(:last-child) {
     margin-bottom: 30px;
 }
